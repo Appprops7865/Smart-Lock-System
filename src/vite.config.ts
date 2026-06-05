@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/Smart-Lock-System/', // 💡 This tells Vite explicitly to load assets from your subfolder
+  base: '', // 💡 This converts all asset connections into dead-relative strings, bypassing folder bugs
   build: {
     outDir: 'dist'
   }
